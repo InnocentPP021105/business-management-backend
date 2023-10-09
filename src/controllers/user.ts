@@ -19,7 +19,7 @@ export const getUser = async (req: Request, res: Response) => {
     if (!user) {
         return res.status(404).send('not found')
     }
-    return res.json(user)   // user found
+    return res.json(user)
 }
 
 export const createUser = async (req: Request, res: Response) => {
